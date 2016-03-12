@@ -32,6 +32,7 @@ $(function() {
         xhr.onreadystatechange = function() {
             if (xhr.readyState == 4) {
                 if(xhr.status == 200) {
+                    console.log(xhr.responseText);
                     var crimes = JSON.parse(xhr.responseText);
                     callback(crimes);
                 } else {
