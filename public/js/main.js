@@ -30,9 +30,13 @@ $(function() {
     function getCrimes(lat, lon, callback) {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-                var crimes = JSON.parse(xhr.responseText);
-                callback(crimes);
+            if (xhr.readyState == 4) {
+                if(xhr.status == 200) {
+                    var crimes = JSON.parse(xhr.responseText);
+                    callback(crimes);
+                } else {
+                    console.log("Error: " + xhr.statusText)j
+                }
             }
         };
         xhr.open('GET', "/crimes?lat=" + lat + "&lon=" + lon, true);
