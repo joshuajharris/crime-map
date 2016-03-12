@@ -35,7 +35,7 @@ $(function() {
                     var crimes = JSON.parse(xhr.responseText);
                     callback(crimes);
                 } else {
-                    console.log("Error: " + xhr.statusText)j
+                    console.log("Error: " + xhr.statusText);
                 }
             }
         };
