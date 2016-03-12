@@ -1,4 +1,4 @@
-var spotcrime = require('spotcrime');
+var spotcrime = require('./spotcrime/spotcrime.js');
 var Promise = require('promise');
 
 module.exports = function(params) {
