@@ -10,9 +10,9 @@ Shows recent police crime reports in your area. Wanted to play with maps.
 
 - [Getting Started](#getting-started)
   - [Installation](#installation)
-  - [/ (index)](#/-(index))
-  - [/crimes?lat={latitude}&lon={longitude}](#/crimes?lat={latitude}&lon={longitude})
-- [License](#license)
+  - [/ (index)](#-index)
+  - [/crimes](#crimeslatlatitudelonlongitude)
+- [License](#license-mit)
 
 ## Getting Started
 
