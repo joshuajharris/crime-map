@@ -1,6 +1,6 @@
 var request = require('request');
 
-var baseUrl = "http://api.spotcrime.com/crimes.json";
+var baseUrl = "https://api.spotcrime.com/crimes.json";
 var key = "spotcrime-private-api-key";
 
 module.exports = function(loc, radius, cb) {
